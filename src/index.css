@@ -1,13 +1,728 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
+  overflow-x: hidden;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "fjalla" !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --colore1: "#B11D59";
+  --e-global-color-astglobalcolor0: #b11d59;
+  --e-global-color-astglobalcolor1: #ffffff;
+  --e-global-color-astglobalcolor2: #ffffff;
+  --e-global-color-astglobalcolor3: rgba(255, 255, 255, 0.85);
+  --e-global-color-astglobalcolor4: #01c0af;
+  --e-global-color-astglobalcolor5: #01d1bf;
+  --blue: #243673;
+  --e-global-color-astglobalcolor7: #FBFCFF;
+  --e-global-color-astglobalcolor8: #4D4A46;
+  --e-global-color-astglobalcolor9: #c55a85;
+  /* gradient colors */
+
+  --theme1: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+ --theme2: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+--theme3: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+  --theme4: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+--theme5: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+  --theme7: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+ 
+  /* gradients colors */
+}
+
+
+
+html {
+  font-family: "fjalla";
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.bg-purple {
+  background-color: var(--e-global-color-astglobalcolor0);
+}
+
+.bg-purple1 {
+  background-color: var(--e-global-color-astglobalcolor9);
+}
+
+a {
+  text-decoration: none !important;
+  border: none !important;
+
+}
+
+.color-green1 {
+  background-color: #7215EA;
+}
+
+.graadientTheme {
+  background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+}
+
+/* ul{
+  background-color: red;
+} */
+ul li {
+  color: white;
+  cursor: pointer;
+}
+
+.active-tab {
+  border-style: 2px dotted red;
+}
+
+@font-face {
+  font-family: 'fjalla';
+  src: url('./assets/fonts/fajjalafont/FjallaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url('./assets/fonts/poppins/OFL.txt');
+}
+
+@font-face {
+  font-family: 'meriweather';
+  src: url('./assets/fonts/merriweather/OFL.txt');
+}
+
+@font-face {
+  font-family: 'monserat';
+  src: url('./assets/fonts/monserat/OFL.txt');
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url('./assets/fonts/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'rubik';
+  src: url('./assets/fonts/rubik/RubikDoodleShadow-Regular.ttf');
+}
+
+.hero-sec h1 {
+  color: #ffffff2b;
+  font-size: 200px;
+  /* line-height: 15rem; */
+}
+
+.hero-sec h2 {
+  font-size:
+    100px;
+}
+
+.hero-sec span {
+  top: 60px;
+}
+
+.hero-sec span::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+}
+
+.hero-sec span::before {
+  content: "";
+  width: 50px;
+  height: 4px;
+}
+
+.spanLine span {
+  top: 0px;
+}
+
+.spanLine span::before {
+  content: "";
+  width: 50px;
+  height: 4px;
+}
+
+.spanLine span::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+}
+
+.hero-sec h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.truckimg {
+  top: -140px;
+}
+
+.image-container img {
+  position: absolute;
+  top: 70px;
+  left: 0;
+
+  z-index: 1;
+}
+
+
+.menuSection h2 {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+
+.img-Con img {
+  margin-top: -18px;
+}
+
+
+.underline-container {
+  display: flex;
+  justify-content: center;
+}
+
+.underline {
+  position: absolute;
+  top: 100px;
+  width: 100px;
+  height: 4px;
+  background-color: #ffffff;
+  /* Adjust the color as needed */
+  left: 50%;
+  /* Center the underline */
+  transform: translateX(-50%);
+  /* Center the underline */
+}
+
+.spanLine1 {
+  position: absolute;
+
+  width: 100px;
+  height: 4px;
+  background-color: #ffffff;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+.spanLine span {
+  top: 0px;
+}
+
+.spansLine span::after {
+  content: "";
+  width: 20px;
+  height: 4px;
+}
+
+.spansLine span::before {
+  content: "";
+  width: 20px;
+  height: 4px;
+}
+
+.spanLine2 {
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: #ffffff;
+  left: 26%;
+  transform: translateX(-50%);
+  top: 77%;
+}
+
+.spanLine span {
+  top: 0px;
+}
+
+.fontsixe {
+  font-size: 30px;
+
+}
+
+.font-sans1 {
+  font-family: sans-serif;
+}
+
+.abs {
+
+  bottom: -88px;
+  left: 378px;
+}
+
+.form-control::placeholder {
+  color: #FAFAFA;
+  background-color: #FFFFFF;
+  background-color: RGB(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+textarea::placeholder {
+  color: #f3e7e7;
+  background-color: #FFFFFF;
+  background-color: RGB(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.color1 {
+  /* background-color: var(--colore1); */
+  background-color: #B11D59;
+}
+
+.shape-fill {
+  fill: #01c0af;
+  transform-origin: center;
+  transform: rotateY(0deg);
+}
+
+.shape-fill svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.line-container {
+  position: absolute;
+  left: 205px;
+  top: 14%;
+  width: 44%;
+  height: 3px;
+  background-color: #ffffff;
+  transform: translateY(-50%);
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* Adjust the color as needed */
+  display: block;
+}
+
+.image-container1 img {
+  position: absolute;
+  top: -320px;
+
+  left: -149px;
+
+}
+
+/* ======================= CURVE iMAGE START=================== */
+.curve-img {
+  fill: var(--e-global-color-astglobalcolor0);
+  transform: rotate(180deg);
+}
+
+.truck-below-curve {
+  height: 130px;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  bottom: -30px;
+  transform: translatex(-50%);
+}
+
+.navbarmobileViewapper {
+  display: flex;
+}
+
+.fixed-button-container {
+  position: fixed;
+  right: -130px;
+  top: 200px;
+  cursor: pointer;
+  transition: right 0.7s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 130px;
+  justify-content: center;
+  color: var(--blue);
+  z-index: 3;
+  background-color: var(--e-global-color-astglobalcolor1);
+  cursor: pointer;
+  font-size: 17px;
+
+}
+
+.fixed-button-container.visible {
+  right: 0;
+  /* Final position when visible */
+}
+
+
+.fixed-button-container:hover {
+  background-color: var(--blue);
+  color: var(--e-global-color-astglobalcolor2)
+}
+
+.hovercolor:hover {
+  background-color: var(--e-global-color-astglobalcolor8);
+}
+
+
+/* custmixe theme css */
+
+.customplateMenu {
+  position: fixed;
+  top: 0;
+  right: -130px;
+  bottom: 0;
+  transition: right 0.7s ease, opacity 0.7s ease, height 0.7s ease;
+  /* Transition for the 'right' property */
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.customplateMenu.visible {
+  right: 0;
+  opacity: 1;
+  /* Final position when visible */
+}
+
+.shadows {
+  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customize-div {
+
+  height: 100%;
+  width: 320px;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.overlay:not(.customize-div) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay.customize-div {
+  transform: translateX(0);
+}
+
+/* color plates css */
+
+.color-circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  /* Creates a circular shape */
+  margin: 2px;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+
+.color-red {
+  background-color: var(--e-global-color-astglobalcolor0);
+}
+
+.color-blue {
+  background-color: var(--e-global-color-astglobalcolor1);
+}
+
+.color-green {
+  background-color: var(--e-global-color-astglobalcolor4);
+}
+
+.color-yellow {
+  background-color: var(--e-global-color-astglobalcolor6);
+}
+
+.color-purple {
+  background-color: var(--e-global-color-astglobalcolor9);
+}
+
+.color-purple1 {
+  background-color: #FF0099;
+}
+
+.color-yellow1 {
+  background-color: #FFB100;
+}
+
+.color-blue11 {
+  background-color: #06752E;
+}
+
+
+.selected {
+  border: 2px solid white;
+  /* Border to indicate selection */
+}
+
+.font-square {
+  width: 50px;
+  height: 40px;
+  /* border-radius: 50%; */
+  margin: 2px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  background-color: gainsboro;
+  border: 1px solid rgb(228, 223, 223);
+}
+
+.font-square:hover {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+/* color plates css */
+
+/* custmixe theme css */
+
+
+
+
+/* tooltip css */
+
+
+
+/* tooltip css */
+
+
+/* ======================= CURVE iMAGE eND=================== */
+/* Styles for screens larger than 1200px wide */
+
+
+/* Styles for screens between 1025px and 1200px wide */
+@media (max-width: 1200px) {}
+
+/* Styles for screens between 769px and 1024px wide */
+@media (max-width: 1024px) {
+  .navbarmobileViewhide {
+    display: none;
+
+  }
+
+
+
+  .hero-sec h2 {
+    font-size:
+      50px;
+  }
+
+  .hero-sec h1 {
+
+    font-size: 100px;
+
+  }
+
+  .truckimg {
+    top: 50px;
+  }
+
+  .abs {
+    bottom: -32px;
+    left: 230px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-sec span {
+    top: 11px;
+    left: 10%;
+    transform: rotateX(45deg);
+    transform: translate(181px, 10px);
+  }
+ul{
+  background-color: white;
+}
+ul li {
+  color: var(--e-global-color-astglobalcolor0);
+  cursor: pointer;
+}
+  .fotertruckImg {
+    margin-top: 100px;
+  }
+
+
+.line-container {
+  position: absolute;
+left: 176px;
+  top: 8%;
+}
+  .spanLine span {
+    top: 0px;
+    transform: translate(154px, 3px);
+  }
+    .spanLine2 {
+     
+      left: 10%;
+      transform: translateX(-50%);
+      top: 93%;}
+
+  .img-Con img {
+    margin-top: 18px;
+  }
+    .spanLine span {
+      top: 0px;
+      transform: translate(343px, 3px);
+    }
+}
+
+
+/* Styles for screens between 601px and 768px wide */
+@media (max-width: 768px) {
+  .navbarmobileViewhide {
+    display: none;
+    background-color: #B11D59;
+  }
+ul {
+  background-color: white;
+}
+
+ul li {
+  color: var(--e-global-color-astglobalcolor0);
+  cursor: pointer;
+}
+  .hero-sec span {
+    top: 7px;
+    left: 0%;
+  }
+
+  .underline {
+    position: absolute;
+    top: 78px;
+  }
+
+  .hero-sec span::before {
+    content: "";
+    width: 33px;
+    height: 4px;
+  }
+
+  .hero-sec span::after {
+    content: "";
+    width: 35px;
+    height: 4px;
+  }
+
+ 
+
+  .hero-sec h1 {
+    color: #ffffff2b;
+    font-size: 50px;
+    /* line-height: 10rem; */
+  }
+
+  .hero-sec h2 {
+    font-size: 36px;
+  }
+
+  .hero-sec h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+
+  .abs {
+    bottom: -88px;
+    left: 264px;
+  }
+
+  .menuSection h2 {
+    font-size: 60px;
+    font-weight: 400;
+
+
+  }
+
+  .spanLine span {
+    top: 0px;
+    transform: translate(150px, 3px);
+  }
+
+  .spanLine1 {
+    left: 11%
+  }
+
+  .abs {
+    bottom: -20px;
+    left: 304px;
+  }
+}
+
+/* Styles for screens up to 600px wide */
+@media (max-width: 600px) {
+
+  .hero-sec span {
+    top: 7px;
+    left: -15%;
+  }
+ul {
+  background-color: white;
+}
+
+ul li {
+  color: var(--e-global-color-astglobalcolor0);
+  cursor: pointer;
+}
+  .truck-below-curve {
+    height: 103px;
+  }
+
+  .underline {
+
+    top: 80px;
+    width: 100px;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .spanLine span {
+    top: 0px;
+    transform: translate(95px, 3px);
+  }
+
+  .line-container {
+
+    left: 104px;
+
+    /* transform: translateY(-50%); */
+    transform: translate(71px, 0px);
+  }
+
+  .spanLine1 {
+    position: absolute;
+    top: 154px;
+    width: 100px;
+    height: 4px;
+    background-color: #ffffff;
+    left: 28%;
+    transform: translateX(-50%);
+  }
+
+  .menuSection h2 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  .abs {
+    bottom: -56px;
+    left: 321px;
+    height: 115px;
+  }
+}
+
+@media (max-width: 575px) {
+  .abs {
+    bottom: -21px;
+    left: 220px;
+    height: 97px;
+  }
 }
