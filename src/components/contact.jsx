@@ -15,11 +15,15 @@ const Contact = ({ contactRef }) => {
           <div className="row mx-auto">
             <div className="col-lg-6 col-12 ">
               <div className="lg:p-12">
-                <Heading titelmenu="contact" />
-                <h6 className="font-sans1 text-white">
-                  Proin gravida nibh vel velit auctor aliquet. Aenean
-                  sollicitudin, lorem quis bibendum auctor.
-                </h6>
+             
+                <div className="menuSection uppercase text-lg-start text-center d-flex justify-center flex-col mx-auto relative">
+                  <h2 className="text-white ">Contact</h2>
+                  <div className="underline-container33">
+                    <span className="underLine33"></span>
+                  </div>
+                  <p className="pt-4 uppercase  text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint quo nihil sunt laudantium quisquam? Ab.</p>
+                </div>
+
                 <div className="flex flex-col text-white pt-4">
                   <div className="flex  justify-start align-items-center ">
                     <div className=" p-3 border-white border rounded-full text-white">

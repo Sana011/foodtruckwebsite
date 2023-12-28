@@ -39,7 +39,7 @@ const LongMenu = () => {
 
         <div className="row pt-20  mx-auto justify-center z-1">
           <div className="col-lg-6 col-11 mx-auto justify-center hovercolor border z-1 border-slate-500 relative">
-            <div className=" text-white lg:ps-20 lg:pe-20 lg:pt-20 lg:pb-10 ps-10 pe-10 pt-10 pb-10 relative">
+            <div className="text-white ps-20 pe-20 pt-20 pb-10">
               <LineContainer titel="ICE cream" />
               <div className="d-flex flex-col  ">
                 <Singlemenucard

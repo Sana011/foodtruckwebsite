@@ -197,6 +197,29 @@ ul li {
   /* Center the underline */
 }
 
+
+
+
+.underline-container33 {
+  display: flex;
+  justify-content: center;
+}
+
+.underLine33{
+position: absolute;
+  top: 103px;
+  width: 100px;
+  height: 4px;
+  background-color: #ffffff;
+  left: 13%;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+  /* Center the underline */
+}
+
+
+
+
 .spanLine1 {
   position: absolute;
 
@@ -529,6 +552,24 @@ textarea::placeholder {
     left: 230px;
     height: 100px;
   }
+    .spanLine2 {
+      position: absolute;
+      width: 100px;
+      height: 4px;
+      background-color: #ffffff;
+      left: 31%;
+      transform: translateX(-50%);
+      top: 96%;
+    }
+        .spanLine1 {
+          position: absolute;
+          width: 100px;
+          height: 4px;
+          background-color: #ffffff;
+          left: 17%;
+          transform: translateX(-50%);
+          top: 100px;
+        }
 }
 
 @media (max-width: 991px) {
@@ -549,12 +590,6 @@ ul li {
     margin-top: 100px;
   }
 
-
-.line-container {
-  position: absolute;
-left: 176px;
-  top: 8%;
-}
   .spanLine span {
     top: 0px;
     transform: translate(154px, 3px);
@@ -572,6 +607,16 @@ left: 176px;
       top: 0px;
       transform: translate(343px, 3px);
     }
+        .line-container {
+          position: absolute;
+          left: 169px;
+          top: 11%;
+        }
+                .spanLine1 {
+                  left: 6%;}
+                                    .underLine33 {
+                                      top: 103px;
+                                      left: 50%;}
 }
 
 
@@ -591,14 +636,14 @@ ul li {
 }
   .hero-sec span {
     top: 7px;
-    left: 0%;
+    left: 14%;
   }
 
   .underline {
     position: absolute;
     top: 78px;
+      left: 330px;
   }
-
   .hero-sec span::before {
     content: "";
     width: 33px;
@@ -643,25 +688,41 @@ ul li {
 
   .spanLine span {
     top: 0px;
-    transform: translate(150px, 3px);
-  }
+transform: translate(250px, 3px);
+}
+  
 
   .spanLine1 {
-    left: 11%
+    left: 8%;
+    top: 80px;
+
   }
 
   .abs {
     bottom: -20px;
     left: 304px;
   }
+
+
+    .spanLine2 {
+      left: 10%;
+      transform: translateX(-50%);
+      top: 93%;
+    }
+        .underLine33 {
+          position: absolute;
+          top: 84px;
+          width: 100px;
+          height: 4px;
+          left: 48%;}
 }
 
 /* Styles for screens up to 600px wide */
 @media (max-width: 600px) {
 
-  .hero-sec span {
+.hero-sec span {
     top: 7px;
-    left: -15%;
+    left: 1%;
   }
 ul {
   background-color: white;
@@ -674,29 +735,24 @@ ul li {
   .truck-below-curve {
     height: 103px;
   }
+.underline {
+  top: 57px;
+  width: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-  .underline {
+    .spanLine span {
+      top: 0px;
+      transform: translate(174px, 3px);
+    }
 
-    top: 80px;
-    width: 100px;
 
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .spanLine span {
-    top: 0px;
-    transform: translate(95px, 3px);
-  }
-
-  .line-container {
-
-    left: 104px;
-
-    /* transform: translateY(-50%); */
-    transform: translate(71px, 0px);
-  }
-
+.line-container {
+  left: 127px;
+  /* transform: translateY(-50%); */
+  transform: translate(0px, -3px);
+}
   .spanLine1 {
     position: absolute;
     top: 154px;
@@ -717,6 +773,25 @@ ul li {
     left: 321px;
     height: 115px;
   }
+
+    .spanLine2 {
+      left: 13%;
+      top: 85%;
+    }
+        .spanLine1 {
+  
+          top: 62px;
+        
+        
+          left: 9%
+}
+
+
+.underLine33 {
+  top: 59px;
+  left: 50%;
+}
+
 }
 
 @media (max-width: 575px) {
@@ -725,4 +800,62 @@ ul li {
     left: 220px;
     height: 97px;
   }
+    .line-container {
+      left: 135px;
+      /* transform: translateY(-50%); */
+      transform: translate(0px, 0px);
+    }
+        .hero-sec span {
+          top: 7px;
+          left: 4%;
+        }
+}
+
+
+@media (max-width: 425px) {
+.hero-sec span {
+  top: 7px;
+  left: -11%;
+}
+
+
+.spanLine span {
+  top: 0px;
+  transform: translate(104px, 3px);
+}
+.line-container {
+  left: 101px;
+  /* transform: translateY(-50%); */
+  transform: translate(0px, 0px);
+}
+.spanLine2 {
+  left: 18%;
+  top: 85%;
+}
+.spanLine1 {
+  top: 59px;
+  left: 13%;
+}
+}
+
+
+
+@media (max-width: 375px) {
+.hero-sec span {
+    top: 7px;
+    left: -21%;
+  }
+    .spanLine span {
+      top: 0px;
+      transform: translate(81px, 3px);
+    }
+        .line-container {
+          left: 85px;
+          /* transform: translateY(-50%); */
+          transform: translate(0px, 64px);
+        }
+                .spanLine2 {
+                  left: 18%;
+                  top: 91%;
+                }
 }
