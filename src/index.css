@@ -807,7 +807,7 @@ ul li {
     }
         .hero-sec span {
           top: 7px;
-          left: 4%;
+          left: 5%;
         }
 }
 
@@ -849,13 +849,13 @@ ul li {
       top: 0px;
       transform: translate(81px, 3px);
     }
-        .line-container {
-          left: 85px;
-          /* transform: translateY(-50%); */
-          transform: translate(0px, 64px);
-        }
+     
                 .spanLine2 {
                   left: 18%;
                   top: 91%;
                 }
+                                .line-container {
+                                  left: 85px;
+                                  transform: translateY(-20px);
+                                }
 }
